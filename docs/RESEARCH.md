@@ -111,6 +111,7 @@ Useful attributes/parts for this project:
 - `Calm="true"`
 - `Factions="Vines-100"`
 - `Staying="true"` — observed to stop Burgeoning-spawned rovers from following the player.
+- `Passive="true"` — sets follower/companion engagement to defensive/passive instead of aggressive; this is the data-exposed Brain flag behind the look text `Engagement style: defensive`.
 - `IgnoreCombat="true"` — suppresses active combat pursuit in testing.
 - `HostileWalkRadius="0"`, `MinKillRadius="0"`, `MaxKillRadius="0"` — suppress movement to engage hostiles in testing.
 - `<part Name="AISuppressIndependentBehavior" />` — observed to stop autonomous attacking/bodyguard behavior in one test pass.
@@ -126,6 +127,8 @@ In-game testing notes so far:
 - Plain `Hostile="false"`, `Wanders="false"`, and `Calm="true"` were not enough; Burgeoning-created allies followed the player and defended them.
 - `AISuppressIndependentBehavior` stopped autonomous attacking.
 - `Staying="true"` stopped following.
+- `InitialStance="defensive"` affects long blade stance, not companion engagement style.
+- `Passive="true"` is the likely data-only fix for the look UI showing `Engagement style: aggressive`; it maps to Brain's passive/defensive engagement flag.
 - `IgnoreCombat="true"` and zero kill/walk radii stopped active pursuit/defense behavior; rovers still attack adjacent enemies, which feels acceptable and natural.
 - The private pre-jam prototype felt good in play: rovers were fun to control directly, and the inert-chassis behavior supported the intended fiction.
 - Emergent play pattern: use Burgeoning to grow a garden, dominate a rover, leave the original body guarded by the plant patch, and lure enemies back toward the garden.

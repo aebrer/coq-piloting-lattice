@@ -26,7 +26,7 @@
   <!-- Shared rover chassis: actual Chimera mutation, no mental shield, passive-but-mobile brain. -->
   <object Name="PilotingLattice_BaseRover" Inherits="SapientMutatedVine">
     <tag Name="BaseObject" Value="*noinherit" />
-    <part Name="Brain" Hostile="false" Wanders="false" Mobile="true" Calm="true" Staying="true" IgnoreCombat="true" HostileWalkRadius="0" MinKillRadius="0" MaxKillRadius="0" Factions="Vines-100" />
+    <part Name="Brain" Hostile="false" Wanders="false" Mobile="true" Calm="true" Staying="true" Passive="true" IgnoreCombat="true" HostileWalkRadius="0" MinKillRadius="0" MaxKillRadius="0" Factions="Vines-100" />
     <part Name="AISuppressIndependentBehavior" />
     <removepart Name="ConversationScript" />
     <part Name="Description" Short="A hollow lattice of vineflesh knots itself into a chimeric body. Its tendrils rest in patient stillness, almost empty of will, waiting for a stronger mind to take root." />
@@ -43,7 +43,6 @@
     <skill Name="Tactics_Run" />
     <tag Name="Genotype" Value="Mutated Plant Chimera" />
     <tag Name="NoXP" />
-    <tag Name="InitialStance" Value="defensive" />
     <tag Name="ExcludeFromDynamicEncounters" />
     <tag Name="Role" Value="Brute" />
   </object>
