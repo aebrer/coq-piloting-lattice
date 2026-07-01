@@ -93,7 +93,6 @@
     <stat Name="DV" Value="1" />
     <stat Name="MA" Value="-8" />
     <mutation Name="DarkVision" Level="4" />
-    <mutation Name="Telepathy" Level="1" />
     <skill Name="Multiweapon_Fighting" />
     <skill Name="Multiweapon_Proficiency" />
     <skill Name="ShortBlades_Expertise" />
@@ -114,7 +113,6 @@
     <stat Name="DV" Value="0" />
     <stat Name="MA" Value="-10" />
     <mutation Name="DarkVision" Level="5" />
-    <mutation Name="Telepathy" Level="1" />
     <skill Name="Multiweapon_Fighting" />
     <skill Name="Multiweapon_Proficiency" />
     <skill Name="Cudgel_Expertise" />
@@ -139,7 +137,6 @@
     <stat Name="DV" Value="-1" />
     <stat Name="MA" Value="-12" />
     <mutation Name="DarkVision" Level="6" />
-    <mutation Name="Telepathy" Level="1" />
     <skill Name="Multiweapon_Fighting" />
     <skill Name="Multiweapon_Proficiency" />
     <skill Name="Multiweapon_Expertise" />

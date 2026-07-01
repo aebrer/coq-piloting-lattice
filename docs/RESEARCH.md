@@ -92,6 +92,8 @@ This preserves jam-pack eligibility and makes the interaction feel like an inten
 
 - Chimera is a real morphotype mutation, not just a descriptive tag.
 - Use actual `<mutation Name="Chimera" />` on rover creatures.
+- Avoid mental mutations on rovers: `Chimera` excludes mental mutations, and `Telepathy` on dominated high-tier rovers produced confusing `?` / `[Object]` overlays in testing.
+- Residual Psychic Glimmer on rovers is acceptable and thematically fitting; the problem was the Telepathy overlay/noise, not glimmer itself.
 - If a genotype tag is used, it should not be a substitute for the actual mutation.
 - Base-game NPCs show the pattern of using actual `Chimera` plus other body/mutation content.
 

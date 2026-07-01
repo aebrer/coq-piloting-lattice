@@ -84,9 +84,9 @@ Prototype observations from private pre-jam testing:
 |---|---|---|
 | `PilotingLattice_TwitchingRootling` | low-tier scout/body | Level 1, fast/frail, 2 probing tendrils |
 | `PilotingLattice_VineHusk` | early combat chassis | Level 3, forked body, tendrils + thorns, starts multiweapon |
-| `PilotingLattice_BraidedVineRover` | mid-tier multi-limb body | Level 6, stronger body, thorns + root clubs, Telepathy |
-| `PilotingLattice_KnottedVineMarionette` | high-tier combat chassis | Level 9, stronger cudgel/short-blade skill package, Telepathy |
-| `PilotingLattice_CrownedTrellisHusk` | rare top-tier chassis | Level 13, strongest physical body, best skill package, Telepathy |
+| `PilotingLattice_BraidedVineRover` | mid-tier multi-limb body | Level 6, stronger body, thorns + root clubs |
+| `PilotingLattice_KnottedVineMarionette` | high-tier combat chassis | Level 9, stronger cudgel/short-blade skill package |
+| `PilotingLattice_CrownedTrellisHusk` | rare top-tier chassis | Level 13, strongest physical body, best skill package |
 
 All rovers should have:
 
@@ -98,7 +98,7 @@ All rovers should have:
 - `ExcludeFromDynamicEncounters`
 - `Cudgel`, `ShortBlades`, and `Tactics_Run`
 
-Higher tiers can add Multiweapon, Cudgel, Short Blade, Endurance, Telepathy, and Charge-related skills.
+Higher tiers can add Multiweapon, Cudgel, Short Blade, Endurance, and Charge-related skills.
 
 ## Population table blueprint
 
