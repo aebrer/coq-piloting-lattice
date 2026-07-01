@@ -1,0 +1,8 @@
+{
+  "id": "aebrer_PilotingLattice",
+  "title": "Piloting Lattice",
+  "description": "Adds passive chimeric vine rovers to Burgeoning, creating plant bodies for Domination to pilot.",
+  "version": "0.1.0",
+  "author": "aebrer",
+  "tags": "Creature, Burgeoning, Domination, Data-only"
+}

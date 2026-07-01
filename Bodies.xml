@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<bodies>
+  <anatomies>
+    <anatomy Name="PilotingLattice_Rootling" Category="Plant">
+      <part Type="Central Node">
+        <part Type="Sensory Nodule" />
+      </part>
+      <part Type="Back" />
+      <part Type="Bine" Laterality="Right">
+        <part Type="Tendril" Laterality="Right" SupportsDependent="Tendrils" />
+      </part>
+      <part Type="Bine" Laterality="Left">
+        <part Type="Tendril" Laterality="Left" SupportsDependent="Tendrils" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Tendrils" DependsOn="Tendrils" />
+      <part Type="Roots" />
+    </anatomy>
+
+    <anatomy Name="PilotingLattice_ForkedVine" Category="Plant">
+      <part Type="Central Node">
+        <part Type="Sensory Nodule" />
+      </part>
+      <part Type="Back" />
+      <part Type="Bine" Laterality="Upper Right">
+        <part Type="Tendril" Laterality="Upper Right" SupportsDependent="Tendrils" />
+      </part>
+      <part Type="Bine" Laterality="Upper Left">
+        <part Type="Tendril" Laterality="Upper Left" SupportsDependent="Tendrils" />
+      </part>
+      <part Type="Bine" Laterality="Lower Right">
+        <part Type="Tendril" Laterality="Lower Right" SupportsDependent="Tendrils" />
+      </part>
+      <part Type="Bine" Laterality="Lower Left">
+        <part Type="Tendril" Laterality="Lower Left" SupportsDependent="Tendrils" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Tendrils" DependsOn="Tendrils" />
+      <part Type="Roots" />
+    </anatomy>
+
+    <anatomy Name="PilotingLattice_BraidedVine" Category="Plant">
+      <part Type="Central Node">
+        <part Type="Sensory Nodule" />
+      </part>
+      <part Type="Back" />
+      <part Type="Bine" Laterality="Upper Right">
+        <part Type="Tendril" Laterality="Upper Right" SupportsDependent="Tendrils" />
+      </part>
+      <part Type="Bine" Laterality="Upper Left">
+        <part Type="Tendril" Laterality="Upper Left" SupportsDependent="Tendrils" />
+      </part>
+      <part Type="Bine" Laterality="Middle Right">
+        <part Type="Tendril" Laterality="Middle Right" SupportsDependent="Tendrils" />
+      </part>
+      <part Type="Bine" Laterality="Middle Left">
+        <part Type="Tendril" Laterality="Middle Left" SupportsDependent="Tendrils" />
+      </part>
+      <part Type="Bine" Laterality="Lower Right">
+        <part Type="Tendril" Laterality="Lower Right" SupportsDependent="Tendrils" />
+      </part>
+      <part Type="Bine" Laterality="Lower Left">
+        <part Type="Tendril" Laterality="Lower Left" SupportsDependent="Tendrils" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Tendrils" DependsOn="Tendrils" />
+      <part Type="Roots" />
+    </anatomy>
+
+    <anatomy Name="PilotingLattice_CrownedTrellis" Category="Plant">
+      <part Type="Central Node">
+        <part Type="Sensory Nodule" />
+      </part>
+      <part Type="Back" />
+      <part Type="Bine" Laterality="Crown Right">
+        <part Type="Tendril" Laterality="Crown Right" SupportsDependent="Tendrils" />
+      </part>
+      <part Type="Bine" Laterality="Crown Left">
+        <part Type="Tendril" Laterality="Crown Left" SupportsDependent="Tendrils" />
+      </part>
+      <part Type="Bine" Laterality="Upper Right">
+        <part Type="Tendril" Laterality="Upper Right" SupportsDependent="Tendrils" />
+      </part>
+      <part Type="Bine" Laterality="Upper Left">
+        <part Type="Tendril" Laterality="Upper Left" SupportsDependent="Tendrils" />
+      </part>
+      <part Type="Bine" Laterality="Middle Right">
+        <part Type="Tendril" Laterality="Middle Right" SupportsDependent="Tendrils" />
+      </part>
+      <part Type="Bine" Laterality="Middle Left">
+        <part Type="Tendril" Laterality="Middle Left" SupportsDependent="Tendrils" />
+      </part>
+      <part Type="Bine" Laterality="Lower Right">
+        <part Type="Tendril" Laterality="Lower Right" SupportsDependent="Tendrils" />
+      </part>
+      <part Type="Bine" Laterality="Lower Left">
+        <part Type="Tendril" Laterality="Lower Left" SupportsDependent="Tendrils" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Tendrils" DependsOn="Tendrils" />
+      <part Type="Roots" />
+    </anatomy>
+  </anatomies>
+</bodies>

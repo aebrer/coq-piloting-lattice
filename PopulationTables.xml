@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<populations>
+  <population Name="PlantSummoning1" Load="Merge">
+    <group Name="Summons" Load="Merge">
+      <group Name="PlantCreature" Load="Merge">
+        <object Weight="2" Blueprint="PilotingLattice_TwitchingRootling" />
+      </group>
+    </group>
+  </population>
+
+  <population Name="PlantSummoning2" Load="Merge">
+    <group Name="Summons" Load="Merge">
+      <group Name="PlantCreature" Load="Merge">
+        <object Weight="3" Blueprint="PilotingLattice_TwitchingRootling" />
+        <object Weight="1" Blueprint="PilotingLattice_VineHusk" />
+      </group>
+    </group>
+  </population>
+
+  <population Name="PlantSummoning3" Load="Merge">
+    <group Name="Summons" Load="Merge">
+      <group Name="PlantCreature" Load="Merge">
+        <object Weight="3" Blueprint="PilotingLattice_VineHusk" />
+      </group>
+    </group>
+  </population>
+
+  <population Name="PlantSummoning4" Load="Merge">
+    <group Name="Summons" Load="Merge">
+      <group Name="PlantCreature" Load="Merge">
+        <object Weight="4" Blueprint="PilotingLattice_VineHusk" />
+        <object Weight="1" Blueprint="PilotingLattice_BraidedVineRover" />
+      </group>
+    </group>
+  </population>
+
+  <population Name="PlantSummoning5" Load="Merge">
+    <group Name="Summons" Load="Merge">
+      <group Name="PlantCreature" Load="Merge">
+        <object Weight="4" Blueprint="PilotingLattice_BraidedVineRover" />
+      </group>
+    </group>
+  </population>
+
+  <population Name="PlantSummoning6" Load="Merge">
+    <group Name="Summons" Load="Merge">
+      <group Name="PlantCreature" Load="Merge">
+        <object Weight="5" Blueprint="PilotingLattice_BraidedVineRover" />
+        <object Weight="1" Blueprint="PilotingLattice_KnottedVineMarionette" />
+      </group>
+    </group>
+  </population>
+
+  <population Name="PlantSummoning7" Load="Merge">
+    <group Name="Summons" Load="Merge">
+      <group Name="PlantCreature" Load="Merge">
+        <object Weight="5" Blueprint="PilotingLattice_KnottedVineMarionette" />
+      </group>
+    </group>
+  </population>
+
+  <population Name="PlantSummoning8" Load="Merge">
+    <group Name="Summons" Load="Merge">
+      <group Name="PlantCreature" Load="Merge">
+        <object Weight="6" Blueprint="PilotingLattice_KnottedVineMarionette" />
+        <object Weight="1" Blueprint="PilotingLattice_CrownedTrellisHusk" />
+      </group>
+    </group>
+  </population>
+
+  <population Name="PlantSummoning9" Load="Merge">
+    <group Name="Summons" Load="Merge">
+      <group Name="PlantCreature" Load="Merge">
+        <object Weight="5" Blueprint="PilotingLattice_KnottedVineMarionette" />
+        <object Weight="2" Blueprint="PilotingLattice_CrownedTrellisHusk" />
+      </group>
+    </group>
+  </population>
+</populations>

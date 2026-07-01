@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+  <!-- Natural weapons for Piloting Lattice rovers. -->
+  <object Name="PilotingLattice_ProbeTendril" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="probing tendril" Tile="Creatures/natural-weapon-frond.bmp" ColorString="&amp;g" />
+    <part Name="MeleeWeapon" BaseDamage="1d2" Skill="Cudgel" Stat="Strength" Slot="Hand" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Gender" Value="neuter" />
+  </object>
+
+  <object Name="PilotingLattice_LatticeThorns" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="lattice thorns" Tile="Creatures/natural-weapon-thorns.bmp" ColorString="&amp;g" />
+    <part Name="MeleeWeapon" BaseDamage="1d4" Skill="ShortBlades" Stat="Strength" Slot="Arm" />
+    <part Name="Grabber" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Gender" Value="plural" />
+  </object>
+
+  <object Name="PilotingLattice_RootClub" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="knotted root" Tile="Creatures/natural-weapon-mallet.bmp" ColorString="&amp;y" />
+    <part Name="MeleeWeapon" BaseDamage="1d6" Skill="Cudgel" Stat="Strength" Slot="Hand" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Gender" Value="neuter" />
+  </object>
+
+  <!-- Shared rover chassis: actual Chimera mutation, no mental shield, passive-but-mobile brain. -->
+  <object Name="PilotingLattice_BaseRover" Inherits="SapientMutatedVine">
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="Brain" Hostile="false" Wanders="false" Mobile="true" Calm="true" Staying="true" IgnoreCombat="true" HostileWalkRadius="0" MinKillRadius="0" MaxKillRadius="0" Factions="Vines-100" />
+    <part Name="AISuppressIndependentBehavior" />
+    <removepart Name="ConversationScript" />
+    <part Name="Description" Short="A hollow lattice of vineflesh knots itself into a chimeric body. Its tendrils rest in patient stillness, almost empty of will, waiting for a stronger mind to take root." />
+    <stat Name="Intelligence" sValue="2" />
+    <stat Name="Willpower" sValue="1" />
+    <stat Name="Ego" sValue="1" />
+    <stat Name="MA" Value="-5" />
+    <mutation Name="Chimera" />
+    <mutation Name="DarkVision" Level="2" />
+    <mutation Name="PhotosyntheticSkin" Level="1" />
+    <skill Name="Cudgel" />
+    <skill Name="ShortBlades" />
+    <skill Name="Tactics_Run" />
+    <tag Name="Genotype" Value="Mutated Plant Chimera" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="Role" Value="Brute" />
+  </object>
+
+  <object Name="PilotingLattice_TwitchingRootling" Inherits="PilotingLattice_BaseRover">
+    <part Name="Render" DisplayName="twitching rootling" Tile="Assets_Content_Textures_Creatures_sw_plant.bmp" RenderString="&amp;" ColorString="&amp;g^K" DetailColor="g" />
+    <part Name="Body" Anatomy="PilotingLattice_Rootling" />
+    <part Name="Description" Short="A little vine-chimera twitches on a braid of roots. It feels its way through stone-shadow by tremor and pressure, but its own mind is little more than sap in a loop." />
+    <stat Name="Level" Value="1" />
+    <stat Name="Hitpoints" Value="12" />
+    <stat Name="Strength" sValue="10" />
+    <stat Name="Agility" sValue="16" />
+    <stat Name="Toughness" sValue="12" />
+    <stat Name="AV" Value="1" />
+    <stat Name="DV" Value="2" />
+    <mutation Name="DarkVision" Level="2" />
+    <inventoryobject Blueprint="PilotingLattice_ProbeTendril" Number="2" />
+  </object>
+
+  <object Name="PilotingLattice_VineHusk" Inherits="PilotingLattice_BaseRover">
+    <part Name="Render" DisplayName="vine husk" Tile="Assets_Content_Textures_Creatures_sw_plant.bmp" RenderString="&amp;" ColorString="&amp;G^K" DetailColor="g" />
+    <part Name="Body" Anatomy="PilotingLattice_ForkedVine" />
+    <part Name="Description" Short="Several bines fork from a hollow central node, each tipped with a soft tendril or a thorny hook. The husk is quiet until another ego climbs inside." />
+    <stat Name="Level" Value="3" />
+    <stat Name="Hitpoints" Value="22" />
+    <stat Name="Strength" sValue="14" />
+    <stat Name="Agility" sValue="14" />
+    <stat Name="Toughness" sValue="14" />
+    <stat Name="AV" Value="2" />
+    <stat Name="DV" Value="1" />
+    <stat Name="MA" Value="-6" />
+    <mutation Name="DarkVision" Level="3" />
+    <skill Name="Multiweapon_Fighting" />
+    <inventoryobject Blueprint="PilotingLattice_ProbeTendril" Number="2" />
+    <inventoryobject Blueprint="PilotingLattice_LatticeThorns" Number="2" />
+  </object>
+
+  <object Name="PilotingLattice_BraidedVineRover" Inherits="PilotingLattice_BaseRover">
+    <part Name="Render" DisplayName="braided vine rover" Tile="Assets_Content_Textures_Creatures_sw_plant.bmp" RenderString="&amp;" ColorString="&amp;G^y" DetailColor="Y" />
+    <part Name="Body" Anatomy="PilotingLattice_BraidedVine" />
+    <part Name="Description" Short="A braid of roots and chimeric bines forms a low, many-tendriled rover. Its body is useful, its senses are deep, and its ego is absent enough to invite trespass." />
+    <stat Name="Level" Value="6" />
+    <stat Name="Hitpoints" Value="38" />
+    <stat Name="Strength" sValue="18" />
+    <stat Name="Agility" sValue="15" />
+    <stat Name="Toughness" sValue="18" />
+    <stat Name="AV" Value="3" />
+    <stat Name="DV" Value="1" />
+    <stat Name="MA" Value="-8" />
+    <mutation Name="DarkVision" Level="4" />
+    <mutation Name="Telepathy" Level="1" />
+    <skill Name="Multiweapon_Fighting" />
+    <skill Name="Multiweapon_Proficiency" />
+    <skill Name="ShortBlades_Expertise" />
+    <inventoryobject Blueprint="PilotingLattice_LatticeThorns" Number="4" />
+    <inventoryobject Blueprint="PilotingLattice_RootClub" Number="2" />
+  </object>
+
+  <object Name="PilotingLattice_KnottedVineMarionette" Inherits="PilotingLattice_BaseRover">
+    <part Name="Render" DisplayName="knotted vine marionette" Tile="Assets_Content_Textures_Creatures_sw_plant.bmp" RenderString="&amp;" ColorString="&amp;G^W" DetailColor="W" />
+    <part Name="Body" Anatomy="PilotingLattice_CrownedTrellis" />
+    <part Name="Description" Short="A dense marionette of bines, tendrils, hooks, and clubbed roots stands in beautiful vacancy. It has many answers to force, and almost no answer to thought." />
+    <stat Name="Level" Value="9" />
+    <stat Name="Hitpoints" Value="58" />
+    <stat Name="Strength" sValue="22" />
+    <stat Name="Agility" sValue="14" />
+    <stat Name="Toughness" sValue="22" />
+    <stat Name="AV" Value="4" />
+    <stat Name="DV" Value="0" />
+    <stat Name="MA" Value="-10" />
+    <mutation Name="DarkVision" Level="5" />
+    <mutation Name="Telepathy" Level="1" />
+    <skill Name="Multiweapon_Fighting" />
+    <skill Name="Multiweapon_Proficiency" />
+    <skill Name="Cudgel_Expertise" />
+    <skill Name="Cudgel_Bludgeon" />
+    <skill Name="ShortBlades_Expertise" />
+    <skill Name="Endurance" />
+    <inventoryobject Blueprint="PilotingLattice_LatticeThorns" Number="6" />
+    <inventoryobject Blueprint="PilotingLattice_RootClub" Number="2" />
+  </object>
+
+  <object Name="PilotingLattice_CrownedTrellisHusk" Inherits="PilotingLattice_BaseRover">
+    <part Name="Render" DisplayName="{{M|crowned trellis husk}}" Tile="Assets_Content_Textures_Creatures_sw_plant.bmp" RenderString="&amp;" ColorString="&amp;M^g" DetailColor="G" />
+    <part Name="Body" Anatomy="PilotingLattice_CrownedTrellis" />
+    <part Name="Description" Short="A rare, crown-knotted lattice rises into the shape of a waiting monster. Its body is a throne of roots, but the throne is empty." />
+    <stat Name="Level" Value="13" />
+    <stat Name="Hitpoints" Value="82" />
+    <stat Name="Strength" sValue="26" />
+    <stat Name="Agility" sValue="12" />
+    <stat Name="Toughness" sValue="26" />
+    <stat Name="Intelligence" sValue="3" />
+    <stat Name="AV" Value="5" />
+    <stat Name="DV" Value="-1" />
+    <stat Name="MA" Value="-12" />
+    <mutation Name="DarkVision" Level="6" />
+    <mutation Name="Telepathy" Level="1" />
+    <skill Name="Multiweapon_Fighting" />
+    <skill Name="Multiweapon_Proficiency" />
+    <skill Name="Multiweapon_Expertise" />
+    <skill Name="Cudgel_Expertise" />
+    <skill Name="Cudgel_Bludgeon" />
+    <skill Name="ShortBlades_Expertise" />
+    <skill Name="Endurance" />
+    <skill Name="Endurance_Weathered" />
+    <skill Name="Tactics_Charge" />
+    <inventoryobject Blueprint="PilotingLattice_LatticeThorns" Number="8" />
+    <inventoryobject Blueprint="PilotingLattice_RootClub" Number="4" />
+  </object>
+</objects>
