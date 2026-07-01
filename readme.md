@@ -1,5 +1,7 @@
 # Piloting Lattice
 
+![Piloting Lattice preview](Preview.png)
+
 A data-only Caves of Qud mod for Caves of Qud Modding Jam 5: Burgeoning.
 
 Piloting Lattice adds passive chimeric vine rovers to Burgeoning's plant summoning tables. Grow a garden, dominate a low-ego vine chassis, and pilot it while your original body lies dormant.
@@ -14,6 +16,7 @@ This repository was created after the jam window opened. Its initial commit port
 
 - [`docs/DESIGN.md`](docs/DESIGN.md) — concept design and implementation blueprint.
 - [`docs/RESEARCH.md`](docs/RESEARCH.md) — jam rules, modding links, base-game references, and research notes.
+- [`distribution/`](distribution/) — itch.io and Steam Workshop page copy plus upload metadata template.
 
 ## License
 

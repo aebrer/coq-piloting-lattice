@@ -34,6 +34,7 @@
     <stat Name="Willpower" sValue="1" />
     <stat Name="Ego" sValue="1" />
     <stat Name="MA" Value="-5" />
+    <stat Name="XPValue" sValue="0" Value="0" />
     <mutation Name="Chimera" />
     <mutation Name="DarkVision" Level="2" />
     <mutation Name="PhotosyntheticSkin" Level="1" />
@@ -41,6 +42,8 @@
     <skill Name="ShortBlades" />
     <skill Name="Tactics_Run" />
     <tag Name="Genotype" Value="Mutated Plant Chimera" />
+    <tag Name="NoXP" />
+    <tag Name="InitialStance" Value="defensive" />
     <tag Name="ExcludeFromDynamicEncounters" />
     <tag Name="Role" Value="Brute" />
   </object>
